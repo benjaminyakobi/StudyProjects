@@ -1,0 +1,89 @@
+[33mcommit fc7f2116cd0a9aade8cef6198c9af0bf656a2c2f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 18:54:26 2019 +0300
+
+    dog master changes
+
+[33mcommit 428ef538a01f9bc1c80e32e898f034be94cc29e1[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:56:21 2019 +0300
+
+    renamed & relocated file to Notes folder
+
+[33mcommit bbd19d9c5e88b28622ee657b0e5484928e897e5c[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:50:33 2019 +0300
+
+    renamed first.txt to home.txt
+
+[33mcommit f1c2920ba2d5ee56746e8b635c0ab0ab14d40563[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:46:57 2019 +0300
+
+    this is the point in time we deleted third.txt
+
+[33mcommit 31da98813fcac088ae662809130d194990ecddfa[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:39:56 2019 +0300
+
+    and again,,,, more changes in first.txt file!
+
+[33mcommit a795ba06510c3e7570a15a5dae22cb98375590b1[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:38:30 2019 +0300
+
+    some more changes at the first.txt file
+
+[33mcommit 2d5005c0df9412ae935e8255773fd2c002561815[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:27:53 2019 +0300
+
+    here are our awesome commit for 2nd & third files, YESgit add .!
+
+[33mcommit 3b6a856738010527c749f965f5d7f067bb949352[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 15:24:12 2019 +0300
+
+    we are commiting our chnages in first.txt
+
+[33mcommit fb57156dd15fb58bba293e009c91497d76997c52[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 00:02:10 2019 +0300
+
+    modified the second file
+
+[33mcommit 0cfa9656c35911445187f04de120e34eabfb15d7[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Wed Jul 10 00:00:05 2019 +0300
+
+    this is how you can edit multiple files!
+
+[33mcommit 6129151f5aed6e96e0abbeec1928aa9f5355947c[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Tue Jul 9 23:56:38 2019 +0300
+
+    modified the first file (ham and sam)
+
+[33mcommit a8d132074bc92180234a2dee7a7a08163dfa5287[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Tue Jul 9 23:52:10 2019 +0300
+
+    the third file is now joining it's friends
+
+[33mcommit 6a61b86c6ace591c6e4aa43ff630277c435bfd79[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Tue Jul 9 23:50:29 2019 +0300
+
+    adding the second file to the repository
+
+[33mcommit 41413f2f3c754f12b24f51a6f9f249798d2e3a26[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Tue Jul 9 14:19:58 2019 +0300
+
+    first commit of tuesday
+
+[33mcommit 8330b4a4aa3d1f52cef13ad18befcee158c518c8[m
+Author: Binyamin <benjaminyakobi@gmail.com>
+Date:   Mon Jul 8 00:07:14 2019 +0300
+
+    First commit
