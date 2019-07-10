@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 change the desktop file lalalala
 second change
-=======
->>>>>>> parent of 1109cb5... first change
