@@ -1,15 +1,7 @@
 #include "MainGame.h"
+#include "Errors.h"
 #include <iostream>
 #include <string>
-
-//Helper function
-void fatalError(std::string errorString) {
-	std::cout << errorString << std::endl;
-	std::cout << "Enter any key to quit...";
-	int temp;
-	std::cin >> temp;
-	SDL_Quit(); //Quit the game
-}
 
 MainGame::MainGame()
 {
@@ -17,6 +9,7 @@ MainGame::MainGame()
 	this->_screenWidth = 1024;
 	this->_screenHeight = 768;
 	this->_gameState = GameState::PLAY;
+	this->_time = 0;
 }
 
 
@@ -27,6 +20,9 @@ MainGame::~MainGame()
 void MainGame::run()
 {
 	initSystems(); //first initialize the system
+
+	this->_sprite.init(-1.0f, -1.0f, 2.0f, 2.0f);
+	
 	gameLoop(); //and after run game loop
 }
 
@@ -54,12 +50,23 @@ void MainGame::initSystems()
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1); //tells sdl that we want double buffer and 1 we're drawing to
 	
 	glClearColor(0.0f, 0.0f, 1.0f, 1.0f); //set background color
+
+	this->initShaders();
+}
+
+void MainGame::initShaders()
+{
+	this->_colorProgram.compileShaders("Shaders/colorShading.vert", "Shaders/colorShading.frag");
+	this->_colorProgram.addAttribute("vertexPosition");
+	this->_colorProgram.addAttribute("vertexColor");
+	this->_colorProgram.linkShaders();
 }
 
 void MainGame::gameLoop()
 {
 	while (this->_gameState != GameState::EXIT) {
 		processInput();
+		this->_time += 0.003;
 		drawGame();
 	}
 }
@@ -84,17 +91,17 @@ void MainGame::processInput()
 
 void MainGame::drawGame()
 {
-	glClearDepth(1.0);
+	glClearDepth(1.0); //set the base depth to 1.0
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //Clears the screen, "|" bitwise OR operator
 	
-	glEnableClientState(GL_COLOR_ARRAY);
-	glBegin(GL_TRIANGLES);
-	glColor3f(1.0f, 0.0f, 0.0f);
-	glVertex2f(0, 0);
-	glVertex2f(0, 500);
-	glVertex2f(500, 500);
+	this->_colorProgram.use();
 
-	glEnd();
+	GLuint timeLocation = this->_colorProgram.getUniformLocation("time");
+	glUniform1f(timeLocation, this->_time);
 
-	SDL_GL_SwapWindow(this->_window);
+	this->_sprite.draw(); //draw the sprite
+
+	this->_colorProgram.unuse();
+
+	SDL_GL_SwapWindow(this->_window); //swap our buffer and draw everything to the screen
 }
