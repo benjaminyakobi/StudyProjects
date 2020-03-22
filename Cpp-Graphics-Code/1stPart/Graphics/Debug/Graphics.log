@@ -1,0 +1,8 @@
+﻿  Errors.cpp
+  GLSLProgram.cpp
+  Main.cpp
+  MainGame.cpp
+c:\users\benja\desktop\studyprojects\cpp-graphics-code\1stpart\graphics\maingame.cpp(69): warning C4305: '+=': truncation from 'double' to 'float'
+  Sprite.cpp
+  Generating Code...
+  Graphics.vcxproj -> C:\Users\benja\Desktop\StudyProjects\Cpp-Graphics-Code\1stPart\Debug\Graphics.exe
