@@ -1,0 +1,14 @@
+[
+{"country": "US", "reliability": 6, "user": "lsteffans0", "type":
+"accident", "time": "16:10:36"},
+{"country": "IL", "reliability": 5, "user": "rdunton1", "type":
+"police", "time": "4:37:22"},
+{"country": "GR", "reliability": 1, "user": "kcardew2", "type":
+"accident", "time": "11:25:40"},
+{"country": "IL", "reliability": 10, "user": "ogooble3", "type":
+"closed", "time": "2:18:42"},
+{"country": "FR", "reliability": 3, "user": "lhasel4", "type":
+"police", "time": "12:14:20"},
+{"country": "US", "reliability": 2, "user": "lsteffans0", "type":
+"police", "time": "2:08:27"}
+]
