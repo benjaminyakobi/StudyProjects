@@ -1,26 +1,3 @@
-package DesignPatterns;
-
-import java.util.ArrayList;
-
-/**
- * Memento Design pattern Class
- * 
- * @author benja
- *
- */
-public class MementoCareTaker {
-
-	private ArrayList<Memento> mementoList = new ArrayList<Memento>();
-
-	public void add(Memento state) {
-		this.mementoList.add(state);
-	}
-
-	public Memento get(int index) {
-		return this.mementoList.get(index);
-	}
-
-	public ArrayList<Memento> getMementoList() {
-		return this.mementoList;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a38e5b90f81bb94a22cdd1cc163294dcd90cd90690fa89bbafd279b87ed880b
+size 468
