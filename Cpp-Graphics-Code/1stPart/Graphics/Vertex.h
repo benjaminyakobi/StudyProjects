@@ -1,20 +1,3 @@
-#pragma once
-#include <GL/glew.h>
-
-struct Position {
-	float x;
-	float y;
-};
-
-struct Color {
-	GLubyte r;
-	GLubyte g;
-	GLubyte b;
-	GLubyte a;
-} color;
-
-
-struct Vertex {
-	Position position;
-	Color color;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:49981ff2cba736dbf0b7e8277ba02295a93e0dab7d71ff0cae56426c1ac4bce4
+size 224

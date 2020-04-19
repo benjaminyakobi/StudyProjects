@@ -1,20 +1,3 @@
-#pragma once
-#include <GL/glew.h>
-
-class Sprite
-{
-public:
-	Sprite();
-	~Sprite();
-
-	void init(float x, float y, float width, float height);
-	void draw();
-
-
-private:
-	float _x, _y, _width, _height;
-	GLuint _vboID; //vertec buffer ID for CPU/GPU. GLuint is unsigned int but guaranteed to be 32bit
-
-	 
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9649b9f03c1a64747ef5ffc6a6a69c01a042af4e2c4b5647a3665966a03adab
+size 322
